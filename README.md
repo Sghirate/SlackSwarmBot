@@ -40,7 +40,7 @@ return [
 ```
 * Edit <SwarmRoot>/module/Slack/config.module.config.php.
   At the bottom you find the fields we need to edit.
-  * Set 'swarm_host' to the address your users use to access swarm (for example: https://swarm.cyberdyne-systems.com/)
+  * Set 'swarm_host' to the address your users use to access swarm (for example: `https://swarm.cyberdyne-systems.com/`)
   * Set 'bot_token' to the Bot OAuth Token we got above (starting with 'xoxb-2')
   * Set 'channel' to the Channel ID we got above (starting with 'C')
 * Restart Swarm (for example: 'sudo service apache2 restart')
