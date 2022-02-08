@@ -22,6 +22,7 @@ class SlackActivityListener extends AbstractEventListener
     ];
     const ACTIONS_TO_MENTION = [
         "edited reviewers on",
+        "requested",
         "requested revisions to",
         "requested further review of",
         "updated files in",
