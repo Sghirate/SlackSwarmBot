@@ -32,6 +32,7 @@ class SlackActivityListener extends AbstractEventListener
         "re-enabled notifications on",
         "joined",
         "left",
+        "updated",
         "re-enabled notifications on",
         "disabled notifications on",
         "archived comment on",
