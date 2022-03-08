@@ -15,7 +15,6 @@ use Zend\Http\Request;
 class SlackActivityListener extends AbstractEventListener
 {
     const EVENTS_TO_HANDLE = [
-        "task.comment.batch",
         "task.review",
         "task.comment",
         "task.commit"
