@@ -47,3 +47,10 @@ return [
 * Restart Swarm (for example: 'sudo service apache2 restart')
 
 You can also modify which events the bot reacts to and which actions will trigger user mentions by editing `<SwarmRoot>/module/Slack/src/Listener/SlackActivityListener.php`. At the top of the file you find 3 arrays (EVENTS_TO_HANDLE, ACTIONS_TO_MENTION, ACTIONS_TO_IGNORE); Feel free to change them according to your needs and restart the Swarm server afterwards.
+
+
+## Darewise specific
+* You will find this module in `/opt/perforce/swarm/module/Slack`.
+* We maintain a branch on the swarm server where the configuration contains the necessary secrets
+* In order to update the bot, we pull `main` from the repository and merge with the `local` branch
+* SSH in the swarm server and run `update.sh` to update. Check for any conflicts and make sure to commit into the `local` branch.
