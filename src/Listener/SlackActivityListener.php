@@ -262,7 +262,7 @@ class SlackActivityListener extends AbstractEventListener
 
         if (!is_null($thread)) {
             if ($this->shouldUpdateThread($event)) {
-                $description = $review->get('description');
+                $description = $this->makeReviewLink($reviewId) . ": " . $review->get('description');
                 $this->editMessage($thread, $description);
             }
             $msg = $this->getEventMessage($review, $event);
