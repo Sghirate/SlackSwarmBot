@@ -21,7 +21,7 @@ The module has been tested with Swarm 2021. and the January 2022 version of the 
     The easiest way is to open Slack, select a channel and copy a link to it. The last portion of that link, starting with a 'C' is the Channel ID we need.
 
 In the following steps `<SwarmRoot>` refers to the folder you installed Swarm to. On Linux this would be: `/opt/perforce/swarm`
-* Copy module/Slack to `<SwarmRoot>` (so that `module/Slack.php` is located at `<SwarmRoot>/module/Slack/Module.php`)
+* Copy the contents of the repository (except README.md, LICENSE and .gitattributes) to `<SwarmRoot>/module/Slack/` (so that `Module.php` is located at `<SwarmRoot>/module/Slack/Module.php`)
 * Edit or create `<SwarmRoot>/config/custom.modules.config.php`. Make sure it contains an entry for the Slack module.  
 If you created the file it should look like this:
 ```
